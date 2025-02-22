@@ -81,3 +81,176 @@
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* Ensure body and HTML have no margin/padding and full height */
+
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    /* Sticky positioning */
+    top: 0;
+    /* Stick it to the top */
+    width: 100%;
+    background-color: transparent;
+    /* Transparent background by default */
+    z-index: 100;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Navbar when sticky */
+.navbar.sticky {
+    background-color: white;
+    /* White background when sticky */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds shadow when sticky */
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbar .nav-links li:hover {
+    color: #e2a900;
+    /* Highlight color on hover */
+}
+
+/* Navbar Right (Search and Order button) */
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.navbar .order-button {
+    padding: 10px 20px;
+    background-color: #e2a900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbar .order-button:hover {
+    background-color: #d19300;
+    /* Darker shade on hover */
+}
+
+/* Ensure body and HTML have no margin/padding and full height */
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: sticky;
+    /* Sticky positioning */
+    top: 0;
+    /* Stick it to the top */
+    width: 100%;
+    background-color: transparent;
+    /* Transparent background by default */
+    z-index: 100;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Navbar when sticky */
+.navbar.sticky {
+    background-color: white;
+    /* White background when sticky */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Adds shadow when sticky */
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    /* Default link color is white */
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+/* Links change to black when navbar becomes sticky */
+.navbar.sticky .nav-links li {
+    color: black;
+    /* Links turn black when sticky */
+}
+
+.navbar .nav-links li:hover {
+    color: #e2a900;
+    /* Highlight color on hover */
+}
+
+/* Navbar Right (Search and Order button) */
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.navbar .order-button {
+    padding: 10px 20px;
+    background-color: #e2a900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.navbar .order-button:hover {
+    background-color: #d19300;
+    /* Darker shade on hover */
+}
