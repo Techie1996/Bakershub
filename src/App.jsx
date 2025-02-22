@@ -316,6 +316,7 @@ const slides = [
 
 const App = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State to track if menu is open
 
   // Handle scroll event to toggle sticky class
   const handleScroll = () => {
@@ -333,6 +334,10 @@ const App = () => {
     };
   }, []);
 
+    const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle menu state when the hamburger icon is clicked
+  };
+  
   return (
     <div className="container">
       {/* Background Image Slider */}
