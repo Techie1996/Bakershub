@@ -274,6 +274,9 @@
 
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
+    .hamburger {
+            display: flex;
+        }
     .navbar {
         padding: 15px;
         flex-direction: column;
