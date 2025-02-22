@@ -74,6 +74,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./css/styles.css"; // Your custom styles
 import AuthenticRecipes from "./components/AuthenticRecipes";
+import Products from "./components/Products";
 
 const sliderImages = [
   "https://picsum.photos/id/1015/1600/900",
@@ -130,6 +131,7 @@ const App = () => {
         </div>
       </header>
             <AuthenticRecipes />
+            <Products />
     </div>
   );
 };

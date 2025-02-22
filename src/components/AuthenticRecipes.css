@@ -1,34 +1,36 @@
 .authentic-recipes {
     font-family: Arial, sans-serif;
-    text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.authentic-recipes h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.authentic-recipes h2 {
-    color: #555;
-    font-size: 2em;
-    margin-top: 20px;
+.know-more-btn {
+    position: absolute;
+    bottom: 10px;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
 }
 
-.authentic-recipes h3 {
-    color: #777;
-    font-size: 1.5em;
-    margin-top: 15px;
-}
-
-.authentic-recipes p {
-    color: #666;
-    font-size: 1.2em;
-    line-height: 1.6;
+.know-more-btn:hover {
+    background-color: #e55b00;
 }
 
 .authentic-recipes hr {
