@@ -254,7 +254,7 @@
     background-color: #d19300;
     /* Darker shade on hover */
 }
-
+/* Hamburger menu for mobile */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -275,12 +275,28 @@
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
     .hamburger {
-            display: flex;
-        }
+        display: flex;
+    }
+
     .navbar {
         padding: 15px;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    /* Toggle entire nav container visibility on hamburger click */
+    .nav-container {
+        display: none;
+        /* Hidden by default */
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-container.open {
+        display: flex;
+        /* Show when menu is open */
     }
 
     .navbar .nav-links {
@@ -335,14 +351,28 @@
 }
 
 /* Promo Banner Styling */
+/* Promo Banner Styling */
 .promo-banner {
     background-color: rgba(255, 255, 255, 0.3);
-    /* Bright yellow background */
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 1rem;
     font-weight: bold;
+    position: sticky;
+    /* Make it sticky */
+    top: 0;
+    /* Stick to the top */
+    z-index: 99;
+    /* Ensure it stays above other elements */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Promo Banner when sticky */
+.promo-banner.sticky {
+    background-color: #e2a900;
+    /* Change the background when sticky */
 }
 
 .promo-banner p {
@@ -360,3 +390,90 @@
         /* Slightly smaller text on mobile */
     }
 }
+/* Basic Styles for Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 5px;
+    background-color: #ed2323;
+    border-radius: 5px;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+.navbar{
+    display: none;
+}
+.hamburger{
+    display: block;
+}
+
+    /* Hide navbar links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Show navbar links when menu is open */
+    .nav-links.open {
+        display: flex;
+    }
+
+    /* Hide search bar and order button on mobile */
+    .nav-right {
+        display: none;
+    }
+}
+
+/* Optional: Styling for sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
