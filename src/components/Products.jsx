@@ -1,12 +1,18 @@
 import React from 'react';
 import './Products.css';
+import Product1 from "../images/Products/alex-lvrs-aX_ljOOyWJY-unsplash.jpg";
+import Product2 from "../images/Products/american-heritage-chocolate-ghtwiDUu5ro-unsplash.jpg";
+import Product3 from "../images/Products/honey-yanibel-minaya-cruz-fPWxYxfBVYM-unsplash.jpg";
+import Product4 from "../images/Products/jacob-thomas-6jHpcBPw7i8-unsplash.jpg";
+import Product5 from "../images/Products/sarah-elizabeth-dLNu65g0jMA-unsplash.jpg";
 
 const Products = () => {
   const products = [
-    { id: 1, title: 'CAKES', image: 'https://picsum.photos/200/300?random=111111' },
-    { id: 2, title: 'BROWNIES', image: 'https://picsum.photos/200/300?random=111111' },
-    { id: 3, title: 'DESSERTS & CUPCAKES', image: 'https://picsum.photos/200/300?random=111111' },
-    { id: 4, title: 'PASTRIES', image: 'https://picsum.photos/200/300?random=111111' },
+    { id: 1, title: 'CAKES', image: Product1 },
+    { id: 2, title: 'BROWNIES', image: Product2 },
+    { id: 3, title: 'DESSERTS', image: Product3 },
+    { id: 4, title: 'PASTRIES', image: Product4 },
+    { id: 5, title: 'CUPCAKES', image: Product5 },
   ];
 
   return (
