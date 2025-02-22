@@ -29,12 +29,12 @@ const Products = () => {
         ))}
         
       </div>
-        <div className="view-more-card">
+        {/* <div className="view-more-card">
           <div className="view-more-content">
             <span className="view-more-text">VIEW</span>
             <span className="view-more-text">MORE</span>
           </div>
-        </div>
+        </div> */}
     </section>
   );
 };

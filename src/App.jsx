@@ -342,9 +342,9 @@ const App = () => {
     <div className="container">
       {/* Background Image Slider */}
             {/* Promo Banner */}
-      <div className="promo-banner">
+      <div className="promo-banner" >
         <p>
-          <strong>Flat 10% OFF on the first order. </strong> Use Code:{" "}
+          <strong>Flat 10% OFF on the first order. </strong> <strong>Use Code:{" "}</strong>
           <strong>SIGNUP10</strong>
         </p>
       </div>
