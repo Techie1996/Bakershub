@@ -284,6 +284,7 @@
 // export default App;
 
 
+
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -294,11 +295,23 @@ import "./css/styles.css"; // Your custom styles
 import AuthenticRecipes from "./components/AuthenticRecipes";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
+import slider1 from "./images/andy-li-RndRFJ1v1kk-unsplash.jpg";
+import slider2 from "./images/mae-mu-m9pzwmxm2rk-unsplash.jpg";
+import slider3 from "./images/umesh-soni-LDnmyOaA-ew-unsplash.jpg";
 
-const sliderImages = [
-  "https://picsum.photos/id/1015/1600/900",
-  "https://picsum.photos/id/1020/1600/900",
-  "https://picsum.photos/id/1035/1600/900",
+const slides = [
+  {
+    image: slider1,
+    text: "Freshly baked bread",
+  },
+  {
+    image: slider2,
+    text: "Assorted pastries",
+  },
+  {
+    image: slider3,
+    text: "Cupcakes and cookies",
+  },
 ];
 
 const App = () => {
@@ -332,21 +345,29 @@ const App = () => {
         pagination={{ clickable: true }}
         className="background-slider"
       >
-        {sliderImages.map((image, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="slide"
-              style={{ backgroundImage: `url(${image})` }}
-            ></div>
+              className="slide relative"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <div className="absolute bottom-10 right-10">
+                <button className="know-more">{slide.text}</button>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Navbar */}
       <nav
-        className={`navbar ${isSticky ? "sticky top-0 bg-white shadow-lg z-10 transition-all duration-300" : "bg-transparent"} transition-all duration-300`}
+        className={`navbar ${
+          isSticky
+            ? "sticky top-0 bg-white shadow-lg z-10 transition-all duration-300"
+            : "bg-transparent"
+        } transition-all duration-300`}
       >
-        <div className="logo">theobroma</div>
+        <div className="logo">BakersHub</div>
         <ul className="nav-links">
           <li>ABOUT US</li>
           <li>PRODUCTS</li>
@@ -361,14 +382,15 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <header className="hero">
-        <div className="hero-text">
-          <h1>A taste of savoury heaven!</h1>
-          <p>CHOOSE FROM OUR RANGE OF SANDWICHES & SAVOURIES.</p>
-          <button className="know-more">KNOW MORE</button>
-        </div>
-      </header>
-      
+<header className="hero">
+  {/* <div className="hero-text ml-4">
+    <h1>A taste of savoury heaven!</h1>
+    <p>CHOOSE FROM OUR RANGE OF SANDWICHES &amp; SAVOURIES.</p>
+    <button className="know-more text-right">KNOW MORE</button>
+  </div> */}
+</header>
+
+
       <AuthenticRecipes />
       <Products />
       <Footer />
