@@ -360,26 +360,27 @@ const App = () => {
       </Swiper>
 
       {/* Navbar */}
-      <nav
-        className={`navbar ${
-          isSticky
-            ? "sticky top-0 bg-white shadow-lg z-10 transition-all duration-300"
-            : "bg-transparent"
-        } transition-all duration-300`}
-      >
-        <div className="logo">BakersHub</div>
-        <ul className="nav-links">
-          <li>ABOUT US</li>
-          <li>PRODUCTS</li>
-          <li>SPECIALITY CAKES</li>
-          <li>FIND US</li>
-          <li>CONTACT US</li>
-        </ul>
-        <div className="nav-right">
-          <input type="text" placeholder="Search" className="search-bar" />
-          <button className="order-button">ORDER ONLINE</button>
-        </div>
-      </nav>
+<nav
+  className={`navbar ${
+    isSticky
+      ? "sticky top-0 bg-white shadow-lg z-10 transition-all duration-300"
+      : "bg-transparent"
+  } transition-all duration-300`}
+>
+  <div className="logo">BakersHub</div>
+  <ul className="nav-links">
+    <li>ABOUT US</li>
+    <li>PRODUCTS</li>
+    <li>SPECIALITY CAKES</li>
+    <li>FIND US</li>
+    <li>CONTACT US</li>
+  </ul>
+  <div className="nav-right">
+    <input type="text" placeholder="Search" className="search-bar" />
+    <button className="order-button">ORDER ONLINE</button>
+  </div>
+</nav>
+
 
       {/* Hero Section */}
 <header className="hero">
