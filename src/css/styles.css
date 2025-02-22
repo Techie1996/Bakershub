@@ -333,3 +333,30 @@
         font-size: 0.9rem;
     }
 }
+
+/* Promo Banner Styling */
+.promo-banner {
+    background-color: #ffcc00;
+    /* Bright yellow background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.promo-banner p {
+    margin: 0;
+}
+
+.promo-banner strong {
+    color: #333;
+    /* Darker text for the promo code and offer */
+}
+
+@media (max-width: 768px) {
+    .promo-banner {
+        font-size: 0.9rem;
+        /* Slightly smaller text on mobile */
+    }
+}

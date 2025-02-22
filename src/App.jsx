@@ -337,10 +337,17 @@ const App = () => {
     const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Toggle menu state when the hamburger icon is clicked
   };
-  
+
   return (
     <div className="container">
       {/* Background Image Slider */}
+            {/* Promo Banner */}
+      <div className="promo-banner">
+        <p>
+          <strong>Flat 10% OFF on the first order. </strong> Use Code:{" "}
+          <strong>SIGNUP10</strong>
+        </p>
+      </div>
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={0}
