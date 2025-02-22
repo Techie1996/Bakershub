@@ -645,7 +645,7 @@ const App = () => {
             : "bg-transparent"
         } transition-all duration-300`}
       >
-        <div className="logo">BakersHub</div>
+        <div className="logo">celeberationbakers</div>
 
         {/* Hamburger Icon */}
         {/* <div className="hamburger" onClick={toggleMenu}>
